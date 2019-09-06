@@ -12,7 +12,7 @@
 
        //create new tab component and add to the DOM
        
-       
+  /*      
         function createTab (topic) {
            const tabDiv = document.createElement('div');
            tabDiv.classList.add('tab');
@@ -32,3 +32,4 @@
         .catch(error => {
             document.body.innerText = error.message;
              });
+ */
