@@ -17,3 +17,19 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+function cardMaker(){
+    const cardDiv = document.createElement('div');
+    const headline = document.createElement('div');
+    const author = document.createElement('div');
+    const imageContainer = document.createElement('div');
+    const image = document.createElement('img');
+    const by = document.createElement('span');
+
+    cardDiv.classList.add('card');
+    headline.classList.add('headline');
+    author.classList.add('author');
+    imageContainer.classList.add('img-container');
+    
+    
+}
