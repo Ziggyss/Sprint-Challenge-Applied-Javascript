@@ -9,27 +9,26 @@
 //    <div class="tab">topic here</div>
 
 
-axios.get('https://lambda-times-backend.herokuapp.com/topics')
-   .then(response => {
-   debugger
-   console.log(response);
-   })
 
-   .catch(error => {
-       console.log(error.message);
-   })
+       //create new tab component and add to the DOM
+       
+       
+        function createTab (topic) {
+           const tabDiv = document.createElement('div');
+           tabDiv.classList.add('tab');
 
-   /* createTab(data){
-     tabDiv = document.createElement('div');
-     tabDiv.classList.add('tab');
+           tabDiv.textContent = topic;
+           return tabDiv;
+      };
 
-     tab = document.querySelector(.tab);
-     tab.appendChild(response.data);
+      axios.get('https://lambda-times-backend.herokuapp.com/topics')
+          .then(response => {
+           debugger
+           console.log(response);
+           response.data.topics.forEach(topic => {
+           createTab(topic);
+           document.querySelector('.topics').appendChild(tabDiv)})})
 
-   }
-
-   topics.forEach(element => createTab(response.data){
-       return tab;
-   }) */
-
- */
+        .catch(error => {
+            document.body.innerText = error.message;
+             });
