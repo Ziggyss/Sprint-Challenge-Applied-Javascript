@@ -21,7 +21,6 @@ const cardsContainer = document.querySelector('.cards-container');
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
   .then(response => {
-      debugger
     const articles = response.data.articles;
     console.log(articles);
     for(let item in articles){
