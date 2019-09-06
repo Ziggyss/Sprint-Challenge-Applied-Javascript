@@ -21,21 +21,17 @@ const cardsContainer = document.querySelector('.cards-container');
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
   .then(response => {
-    debugger
-    const object = response.data.articles;
-
-    for(let topic in object){
-        object.topic.forEach(
-            
-        )
+      debugger
+    const articles = response.data.articles;
+    console.log(articles);
+    for(let item in articles){
+        articles[item].forEach(item => {
+            cardsContainer.appendChild(cardMaker(item))
+        })
     }
-     
-    /* 
-            cardsContainer.appendChild(cardMaker(article)); */
+})
         
-
-  .catch(error => {
-    debugger
+    .catch(error => {
     document.body.innerText = error.message;
  }); 
 
@@ -63,5 +59,5 @@ function cardMaker(data){
     cardDiv.appendChild(author);
 
     return cardDiv;
-}
+};
 
