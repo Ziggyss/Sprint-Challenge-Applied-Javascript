@@ -30,13 +30,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM is the Document Object Model and it’s an object-based representation of the source HTMl document. It can be manipulated and used by different programs.
+
 2. What is an event?
+
+An event is an occurrence or thing that happens in the system that you are programming. For example, a button being clicked on a browser is an event. 
 
 3. What is an event listener?
 
+An event listener is a function in the program that waits for an event to occur and then completes an action given to it.
+
 4. Why would we convert a NodeList into an Array?
 
+It’s useful to convert a NodeList into an Array because a NodeList is just an array-like object and it doesn’t have access to all of the array methods. Converting it into an Array gives us more opportunities to manipulate the data using methods.
+
 5. What is a component?
+
+A component is a reusable piece of code that can be used to build elements to our styling and functionality specifications.
+
 
 ### Git Set up
 
