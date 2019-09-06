@@ -17,12 +17,23 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+const cardsContainer = document.querySelector('.cards-container');
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
   .then(response => {
     debugger
+    const object = response.data.articles;
 
-  })
+    for(let topic in object){
+        object.topic.forEach(
+            
+        )
+    }
+     
+    /* 
+            cardsContainer.appendChild(cardMaker(article)); */
+        
+
   .catch(error => {
     debugger
     document.body.innerText = error.message;

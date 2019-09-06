@@ -12,7 +12,7 @@
 
        //create new tab component and add to the DOM
        
-  /*      
+    
         function createTab (topic) {
            const tabDiv = document.createElement('div');
            tabDiv.classList.add('tab');
@@ -26,10 +26,8 @@
            debugger
            console.log(response);
            response.data.topics.forEach(topic => {
-           createTab(topic);
-           document.querySelector('.topics').appendChild(tabDiv)})})
+           document.querySelector('.topics').appendChild(createTab(topic))})})
 
         .catch(error => {
             document.body.innerText = error.message;
              });
- */
